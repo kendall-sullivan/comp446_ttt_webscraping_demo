@@ -1,13 +1,13 @@
 # Code Author: Joe Osborne (https://github.com/thejoeosborne/simple-scraper/blob/main/scraper-python.py)
 # scraper-python.py
-# To run this script, paste `python scraper-python.py` in the terminal
+# To run this script, paste `python3 scraper-python.py` in the terminal
 
 import requests
 from bs4 import BeautifulSoup
 
 def scrape():
 
-    url = 'https://www.example.com'
+    url = 'https://www.macalester.edu/'
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
     print(soup)
