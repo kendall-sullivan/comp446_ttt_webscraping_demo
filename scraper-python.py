@@ -10,7 +10,7 @@ def scrape():
     url = 'https://www.macalester.edu/'
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
-    print(soup)
+    # print(soup)
 
     title = soup.select_one('h1').text
     text = soup.select_one('p').text
